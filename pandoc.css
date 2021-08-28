@@ -50,7 +50,7 @@ a:focus {
   background-size: 0 0.1em, 100% 0.1em;
 }
 
-p {
+p, li {
     
     font-size: 1.2em;
     margin-left: auto;
