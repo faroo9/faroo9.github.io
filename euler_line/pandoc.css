@@ -19,7 +19,6 @@ header {
   padding-top: 30px;
   padding-bottom: 30px;
   margin : auto;
-  width: 100%;
   color: black;
   font-size: 30pt;
   text-align : center;
@@ -284,6 +283,12 @@ table td {
     font-size: 16px;
   }
 }
+
+@media only screen and (min-width: 1600px) {
+  body {
+    font-size: 24px;
+  }
+}
 @media print {
   * {
     background: transparent !important;
@@ -305,10 +310,6 @@ table td {
     height: 1px;
     border: 0;
     border-bottom: 1px solid black;
-  }
-
-  header {
-    font-size: 15pt;
   }
   
   a[href]:after {
