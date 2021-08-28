@@ -305,9 +305,12 @@ table td {
     height: 1px;
     border: 0;
     border-bottom: 1px solid black;
-    font-size: 15px;
   }
 
+  header {
+    font-size: 30pt;
+  }
+  
   a[href]:after {
     content: " (" attr(href) ")";
   }
