@@ -19,12 +19,12 @@ header {
   padding-top: 30px;
   padding-bottom: 30px;
   margin : auto;
-  width: 100%;
+  width: 50%;
   color: black;
-  font-size: 40px;
+  font-size: 2em;
   text-align : center;
   background-image : url("cat.svg");
-  background-position: center;
+  background-position: right;
   background-size: 300px 300px;
   background-repeat: no-repeat;
 }
