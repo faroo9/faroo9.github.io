@@ -90,6 +90,7 @@ h4, h5, h6 {
 
 h1 {
     text-decoration: underline;
+    width: 100%;
 }
 
 h2 {
