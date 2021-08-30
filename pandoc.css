@@ -21,6 +21,7 @@ header {
   margin : auto;
   color: black;
   font-size: 24px;
+  white-space: normal;
   width: 100%;
   text-align : center;
   background-image : url("cat.svg");
@@ -88,7 +89,7 @@ h4, h5, h6 {
   font-weight: bold;
 }
 
-header h1 {
+h1 {
     text-decoration: underline;
     width: 100%;
 }
