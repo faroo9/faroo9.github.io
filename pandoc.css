@@ -21,7 +21,7 @@ header {
   margin : auto;
   color: black;
   font-size: 24px;
-  white-space: normal;
+  white-space: nowrap;
   width: 100%;
   text-align : center;
   background-image : url("cat.svg");
