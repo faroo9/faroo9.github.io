@@ -21,7 +21,6 @@ header {
   margin : auto;
   color: black;
   font-size: 24px;
-  white-space: nowrap;
   width: 100%;
   text-align : center;
   background-image : url("cat.svg");
@@ -91,6 +90,7 @@ h4, h5, h6 {
 
 h1 {
     text-decoration: underline;
+    white-space: nowrap;
 }
 
 h2 {
