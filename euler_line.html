@@ -25,7 +25,7 @@
 <p class="author"><p><a href="./index.html">Home</a> <a href="./aboutme.html">About me</a> <a href="https://github.com/SlachPi">Github</a></p></p>
 </header>
 <h2 id="eulers-line-theorem">Euler’s Line Theorem</h2>
-<p>After reading coxeter’s books, which are awesome. I tried to find my own proof that the center of gravity, the circumcenter and the orthocenter lie on a same line, the so called euler’s line. In this article I will show you the proof I came up with.</p>
+<p>A while ago, after reading coxeter’s book “Intoduction to geometry”. I tried to find my own proof that in any triangle the center of gravity, the circumcenter and the orthocenter lie on a same line, the so called euler’s line. In this article I present the proof I came up with.</p>
 <p>Let’s consider a triangle <span class="math inline">\(ABC\)</span> (not right angled at <span class="math inline">\(A\)</span> nor <span class="math inline">\(C\)</span>) and denote by <span class="math inline">\(O\)</span> its circumcenter, by <span class="math inline">\(G\)</span> its center of gravity, and by <span class="math inline">\(H\)</span> its orthocenter.</p>
 <p>First let’s put a cartesian coordinate system such that O is the origin and the X-axis is parallel to <span class="math inline">\(AC\)</span>. So that we will, consequently, have that the Y-axis intersect <span class="math inline">\(AC\)</span> perpendicularly in the middle, and thus <span class="math inline">\(x_A = -x_C\)</span> and <span class="math inline">\(y_A = y_C\)</span>. Thus we can easily conclude that: <span class="math display">\[\left\{
 \begin{array}{c}
@@ -33,14 +33,17 @@ x_G = {1\over 3}(x_A + x_B + x_C) = {1 \over 3}x_B\\
 y_G = {1\over 3}(y_A + y_B + y_C) ={2\over 3} y_A + {1 \over 3} y_B
 \end{array}
 \right.\]</span> If <span class="math inline">\(x_B=x_G=0\)</span> then obviously <span class="math inline">\(x_H=0\)</span> because the Y-axis would be an altitude of the triangle. In this case the euler’s line is just the Y-axis.</p>
-<p>Now, if <span class="math inline">\(x_G\neq0\)</span>, let’s call <span class="math inline">\(H&#39;\)</span> the intersection of <span class="math inline">\((OG)\)</span> and the altitude of <span class="math inline">\(AC\)</span>. Because the line <span class="math inline">\((BH&#39;)\)</span> , being perpendicular to the X-axis, is defined by the equation <span class="math inline">\(x = x_B\)</span> , we have : <span class="math display">\[\left\{
+<p>Now, in the case where <span class="math inline">\(x_G\neq0\)</span>, call <span class="math inline">\(H&#39;\)</span> the intersection of <span class="math inline">\((OG)\)</span> and the altitude of <span class="math inline">\(AC\)</span>. As the line <span class="math inline">\((BH&#39;)\)</span> , being perpendicular to the X-axis, is defined by the equation <span class="math inline">\(x = x_B\)</span> , we have : <span class="math display">\[\left\{
 \begin{array}{c}
 x_{H&#39;} = x_B\\
 y_{H&#39;}  = ({y_G \over x_G}) \times x_{H&#39;} = 2y_A+y_B
 \end{array}
 \right.\]</span> Now, if we can prove that <span class="math inline">\(H&#39;\)</span> lies on the altitude of <span class="math inline">\(AB\)</span>, the proof will be complete. To prove that it suffies to show that the lines <span class="math inline">\((CH&#39;)\)</span> and <span class="math inline">\((AB)\)</span> are perpendicular, or equivalently that the product of their slopes is equal to <span class="math inline">\(-1\)</span>. This product is : <span class="math display">\[{{y_A - y_B}\over{x_A - x_B}} \times {{y_{H&#39;} - y_C}\over{x_{H&#39;} - x_C}} =
 {{y_A - y_B}\over{x_A - x_B}} \times {{2y_A+y_B - y_A}\over{x_B + x_A}}
-= - {{y_A^2 - y_B^2}\over{x_B^2 - x_A^2}}\]</span> But because <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> and <span class="math inline">\(C\)</span> are lying on the same circle, we have. <span class="math display">\[R^2 = x_A^2 + y_A^2 = x_B^2+y_B^2  \implies {{y_A^2 - y_B^2}\over{x_B ^2-x_A^2}}=1\]</span> And thus the proof is complete.</p>
+= - {{y_A^2 - y_B^2}\over{x_B^2 - x_A^2}}\]</span> But as <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> and <span class="math inline">\(C\)</span> lie on the same circle centered, we have. <span class="math display">\[R^2 = x_A^2 + y_A^2 = x_B^2+y_B^2  \implies {{y_A^2 - y_B^2}\over{x_B ^2-x_A^2}}=1\]</span> And thus the proof is complete.</p>
+<figure>
+<img src="euler_line.svg" alt="Euler’s Line Theorem" /><figcaption aria-hidden="true">Euler’s Line Theorem</figcaption>
+</figure>
 <p>This shows how a right choice of coordinate system can make things obvious.</p>
 </body>
 </html>
