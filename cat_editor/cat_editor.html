@@ -16,7 +16,6 @@
 
     <style>
     
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     span.underline{text-decoration: underline;}
     div.column{display: inline-block; vertical-align: top; width: 50%;}
@@ -120,6 +119,10 @@ li {
 
 }
 
+pre {
+  line-height: 0;
+}
+
 #content {
     
     margin-left: auto;
@@ -185,13 +188,6 @@ h6 {
   font-size: 0.9em;
 }
 
-.sourceCode {
-    display: block;
-    width: 100%;
-    margin: 0em 30%;
-    text-align: left;
-}
-
 table {
     width: 100%;
     margin-left: auto;
@@ -215,18 +211,6 @@ hr {
   padding: 0;
 }
 
-pre, code, kbd, samp {
-  color: #000;
-  font-family: monospace, monospace;
-  _font-family: 'courier new', monospace;
-  font-size: 0.98em;
-}
-
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
 
 b, strong {
   font-weight: bold;
@@ -394,7 +378,7 @@ table td {
     content: "";
   }
 
-  pre, blockquote {
+ blockquote {
     border: 1px solid #999;
     padding-right: 1em;
     page-break-inside: avoid;
@@ -463,10 +447,10 @@ table td {
     <script src="editor.js"></script>
     
     <h2 contenteditable="true">Title</h2>
+    <h2 contenteditable="true">Title</h2>
     <div id="content" contenteditable="true">
-      <p>Welcome to Cat_Editor, a basic browser based editor.</p>
-      <p>~</p>
-    </div>
+      <p>Welcome to Cat_Editor, a basic browser based editor.&nbsp;<span style="font-size: 19.2px;">Cat_Editor enables you to create nice html pages easily.</span></p>
+      <p>## Basic Usage :#</p><p>The above is the way you do a title.</p><p>**And this is a bold text**</p><p>Initialize a list like this :</p><p>#LIST#</p><p>Initialize an enumeration list :</p><p>#ENUM#</p><p>And this is an inline equation : $E=mc^2$ (a famous one). If you don't want it inline double the dollar signs.</p><p>This is how you initialize (say) a 4 by 3 table :</p><p>#4#3#</p><p>You can also put images :</p><p>#IMG#https://catsmap.tk/cat.svg#</p><p>And Links :</p><p>#LINK#https://www.google.com/#This is a link to google.com#</p><p>You can also initialize a code bloc like that :</p><p>#CODE#</p><p>Click on the "compile" button above to see the results and the "save" button to save the result as an html file.&nbsp;&nbsp;</p></div>
   </body>
 
 </html>

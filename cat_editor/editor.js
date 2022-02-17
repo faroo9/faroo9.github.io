@@ -10,7 +10,7 @@ function compile(){
     document.body.innerHTML = document.body.innerHTML.replace(/\*\*([^\*]*)\*\*/g, "<strong>$1</strong>");
     document.body.innerHTML = document.body.innerHTML.replace(/\#\#([^\#]*)\#/g, "<h3>$1</h3>");
     document.body.innerHTML = document.body.innerHTML.replace(/\$\$([^\$]*)\$\$/g, "<p onclick=\"eq_edit(this)\">\\[$1\\]<\/p>");
-    document.body.innerHTML = document.body.innerHTML.replace(/\$([^\$]*)\$/g, "<p onclick=\"eq_edit(this)\">\\($1\\)<\/p>");
+    document.body.innerHTML = document.body.innerHTML.replace(/\$([^\$]*)\$/g, "<strong onclick=\"eq_edit(this)\">\\($1\\)<\/strong>");
     document.body.innerHTML = document.body.innerHTML.replace(/\#\d+\#\d+\#/g, function(match) { return table(match);});
     document.body.innerHTML = document.body.innerHTML.replace(/\#IMG\#([^\#]*)\#/g, "<img src=\"$1\" />");
     document.body.innerHTML = document.body.innerHTML.replace(/\#LINK\#([^\#]*)\#([^\#]*)\#/g, "<a href=\"$1\">$2</a>");
@@ -39,14 +39,10 @@ function newTypeset(){
 }
 
 function eq_edit(element) {
-     //I need to get the original Tex markup with $$ delimiters
-   //once the Math gets rendered
    var math_item = MathJax.startup.document.getMathItemsWithin(element)[0];
    var text =  '$' + math_item.math + '$';
 
    element.innerHTML = text;
-  //equation = equation.slice(27,-5);
-
 }
 
 function table(dimensions){
@@ -96,6 +92,7 @@ function table(dimensions){
 function save() {
     let file_content = new XMLSerializer().serializeToString(document)
     file_content = file_content.replace("<script src=\"editor.js\"></script>", "");
+    file_content = file_content.replace("<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>", "");
     file_content = file_content.replace(/style=\"display: block\"/g, "style=\"display: none\"");
     file_content = file_content.replace(/contenteditable=\"true\"/g, "");
 
