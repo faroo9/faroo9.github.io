@@ -40,7 +40,7 @@ function newTypeset(){
 
 function eq_edit(element) {
   var all_math_stuff = MathJax.startup.document.getMathItemsWithin(element)
-  if (myArray.length > 0)
+  if (all_math_stuff.length > 0)
   {
     var math_item = all_math_stuff[0];
     var text =  '$' + math_item.math + '$';
