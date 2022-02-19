@@ -18,7 +18,6 @@ function compile(){
     document.body.innerHTML = document.body.innerHTML.replace(/\#ENUM\#/g, "&nbsp;<ol><li>First Item</li></ol>");
     document.body.innerHTML = document.body.innerHTML.replace(/\#CODE\#/g, "<pre><code class=\"language-cpp\">return 9;</code><\/pre>");
     newTypeset();
-    hljs.highlightAll();
     
     var tag = document.createElement("p");
     var text = document.createTextNode("~");
