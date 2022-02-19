@@ -39,10 +39,14 @@ function newTypeset(){
 }
 
 function eq_edit(element) {
-   var math_item = MathJax.startup.document.getMathItemsWithin(element)[0];
-   var text =  '$' + math_item.math + '$';
-
-   element.innerHTML = text;
+  var all_math_stuff = MathJax.startup.document.getMathItemsWithin(element)
+  if (myArray.length > 0)
+  {
+    var math_item = all_math_stuff[0];
+    var text =  '$' + math_item.math + '$';
+    
+    element.innerHTML = text;
+  }
 }
 
 function table(dimensions){
@@ -95,6 +99,7 @@ function save() {
     file_content = file_content.replace("<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>", "");
     file_content = file_content.replace(/style=\"display: block\"/g, "style=\"display: none\"");
     file_content = file_content.replace(/contenteditable=\"true\"/g, "");
+    file_content = file_content.replace(/onclick=\"eq_edit(this)\"/g, "");
 
     var blob = new Blob([file_content], {type: "text/plain;charset=utf-8"});
     saveAs(blob, "file.html");
