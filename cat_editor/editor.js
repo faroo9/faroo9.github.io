@@ -7,7 +7,7 @@ kofiWidgetOverlay.draw('ounanefarouk27484', {
 
 
 function compile(){
-    document.body.innerHTML = document.body.innerHTML.replace(/\*\*([^\*]*)\*\*/g, "<strong>$1</strong>");
+    document.body.innerHTML = document.body.innerHTML.replace(/\*\*([^\*]*)\*\*/g, "<strong onclick=\"text_edit(this)\">$1</strong>");
     document.body.innerHTML = document.body.innerHTML.replace(/\#\#([^\#]*)\#/g, "<h3>$1</h3>");
     document.body.innerHTML = document.body.innerHTML.replace(/\$\$([^\$]*)\$\$/g, "<p onclick=\"eq_edit(this)\">\\[$1\\]<\/p>");
     document.body.innerHTML = document.body.innerHTML.replace(/\$([^\$]*)\$/g, "<strong onclick=\"eq_edit(this)\">\\($1\\)<\/strong>");
@@ -45,6 +45,13 @@ function eq_edit(element) {
     var text =  '$' + math_item.math + '$';
     
     element.innerHTML = text;
+  }
+}
+
+function text_edit(element) {
+  if (element.style.fontWeight == "bold") {
+    element.style.fontWeight == "normal";
+    element.innerText = "**" + element.innerText + "**";
   }
 }
 
@@ -99,6 +106,7 @@ function save() {
     file_content = file_content.replace(/style=\"display: block\"/g, "style=\"display: none\"");
     file_content = file_content.replace(/contenteditable=\"true\"/g, "");
     file_content = file_content.replace(/onclick=\"eq_edit(this)\"/g, "");
+    file_content = file_content.replace(/onclick=\"text_edit(this)\"/g, "");
 
     var blob = new Blob([file_content], {type: "text/plain;charset=utf-8"});
     saveAs(blob, "file.html");
