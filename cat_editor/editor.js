@@ -39,19 +39,17 @@ function newTypeset(){
 
 function eq_edit(element) {
   var all_math_stuff = MathJax.startup.document.getMathItemsWithin(element)
-  if (all_math_stuff.length > 0)
-  {
-    var math_item = all_math_stuff[0];
-    var text =  '$' + math_item.math + '$';
+  var math_item = all_math_stuff[0];
+  var text =  '$' + math_item.math + '$';
     
-    element.innerHTML = text;
-  }
+  element.innerHTML = text;
+  element.onclick = '';
 }
 
 function text_edit(element) {
     element.style.fontWeight = "normal";
-    if (element.innerText[0] != '*')
     element.innerText = "**" + element.innerText + "**";
+    element.onclick = '';
 }
 
 function table(dimensions){
