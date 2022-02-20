@@ -43,13 +43,13 @@ function eq_edit(element) {
   var text =  '$' + math_item.math + '$';
     
   element.innerHTML = text;
-  element.onclick = '';
+  element.removeAttribute("onclick");
 }
 
 function text_edit(element) {
     element.style.fontWeight = "normal";
     element.innerText = "**" + element.innerText + "**";
-    element.onclick = '';
+    element.removeAttribute("onclick");
 }
 
 function table(dimensions){
