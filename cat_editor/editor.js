@@ -49,10 +49,8 @@ function eq_edit(element) {
 }
 
 function text_edit(element) {
-  if (element.style.fontWeight == "bold") {
     element.style.fontWeight = "normal";
     element.innerText = "**" + element.innerText + "**";
-  }
 }
 
 function table(dimensions){
