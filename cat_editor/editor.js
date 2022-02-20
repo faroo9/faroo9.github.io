@@ -49,6 +49,7 @@ function eq_edit(element) {
 }
 
 function text_edit(element) {
+  alert("work");
   if (element.style.fontWeight == "bold") {
     element.style.fontWeight == "normal";
     element.innerText = "**" + element.innerText + "**";
