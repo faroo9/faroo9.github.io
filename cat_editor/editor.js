@@ -40,12 +40,11 @@ function newTypeset(){
 function eq_edit(element) {
   var all_math_stuff = MathJax.startup.document.getMathItemsWithin(element)
   var math_item = all_math_stuff[0];
-  var text =  '$$' + math_item.math + '$$';
-    
-  element.innerText = text;
   
-  element.innerHTML.file_content.replace("\\(", "");
-  element.innerHTML.file_content.replace("\\)", "");
+  const node = document.createTextNode('$' + math_item.math + '$');
+  var content = document.getElementById("content");
+  
+  content.replaceWith(node);
   
   element.removeAttribute("onclick");
 }
@@ -53,15 +52,15 @@ function eq_edit(element) {
 function ineq_edit(element) {
   var all_math_stuff = MathJax.startup.document.getMathItemsWithin(element)
   var math_item = all_math_stuff[0];
-  var text =  '$' + math_item.math + '$';
-    
-  element.innerHTML = text;
   
-  element.innerHTML.file_content.replace("\\(", "");
-  element.innerHTML.file_content.replace("\\)", "");
+  const node = document.createTextNode("$$" + math_item.math + "$$");
+  var content = document.getElementById("content");
+  
+  content.replaceWith(node);
   
   element.removeAttribute("onclick");
 }
+
 
 function text_edit(element) {
     element.style.fontWeight = "normal";
