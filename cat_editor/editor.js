@@ -42,7 +42,7 @@ function eq_edit(element) {
   var math_item = all_math_stuff[0];
   var text =  '$' + math_item.math + '$';
     
-  element.innerHTML = text;
+  element.innerText = text;
   element.removeAttribute("onclick");
 }
 
