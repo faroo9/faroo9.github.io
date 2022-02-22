@@ -5,12 +5,28 @@ kofiWidgetOverlay.draw('ounanefarouk27484', {
   'floating-chat.donateButton.text-color': '#fff'
 });
 
+var equation_nbr = 0;
+const equations_tex = [];
+
+function add_in_equation(tex) {
+  tex = tex.replace(/\$/g, "");
+  let eq_id = "eq" + (equation_nbr++);
+  equations_tex.push(tex);
+  return "<strong onclick=\"ineq_edit(this)\" id=\""+ eq_id +"\">\\("+tex+"\\)<\/strong>";
+}
+
+function add_equation(tex) {
+  tex = tex.replace(/\$\$/g, "");
+  let eq_id = "eq" + (equation_nbr++);
+  equations_tex.push(tex);
+  return "<p onclick=\"eq_edit(this)\" id=\""+ eq_id +"\">\\("+tex+"\\)<\/p>";
+}
 
 function compile(){
     document.body.innerHTML = document.body.innerHTML.replace(/\*\*([^\*]*)\*\*/g, "<strong onclick=\"text_edit(this)\">$1</strong>");
     document.body.innerHTML = document.body.innerHTML.replace(/\#\#([^\#]*)\#/g, "<h3>$1</h3>");
-    document.body.innerHTML = document.body.innerHTML.replace(/\$\$([^\$]*)\$\$/g, "<p onclick=\"eq_edit(this)\">\\[$1\\]<\/p>");
-    document.body.innerHTML = document.body.innerHTML.replace(/\$([^\$]*)\$/g, "<strong onclick=\"ineq_edit(this)\">\\($1\\)<\/strong>");
+    document.body.innerHTML = document.body.innerHTML.replace(/\$\$[^\$]*\$\$/g, function(match) { return add_equation(match);});
+    document.body.innerHTML = document.body.innerHTML.replace(/\$[^\$]*\$/g, function(match) { return add_in_equation(match);});
     document.body.innerHTML = document.body.innerHTML.replace(/\#\d+\#\d+\#/g, function(match) { return table(match);});
     document.body.innerHTML = document.body.innerHTML.replace(/\#IMG\#([^\#]*)\#/g, "<img src=\"$1\" />");
     document.body.innerHTML = document.body.innerHTML.replace(/\#LINK\#([^\#]*)\#([^\#]*)\#/g, "<a href=\"$1\">$2</a>");
@@ -37,29 +53,23 @@ function newTypeset(){
     MathJax.typeset();
 }
 
-function ineq_edit(element) {
-  var all_math_stuff = MathJax.startup.document.getMathItemsWithin(element);
-  var math_item = all_math_stuff[0];
-  
-  const node = document.createTextNode('$' + findTeX(math_item) + '$');
-  
-  element.replaceWith(node);
-}
 
 function eq_edit(element) {
-  var all_math_stuff = MathJax.startup.document.getMathItemsWithin(element);
-  var math_item = all_math_stuff[0];
+  let eq_id = parseInt(element.id);
   
-  const node = document.createTextNode("$$" + findTeX(math_item) + "$$");
+  const node = document.createTextNode("$$" + equations_tex[eq_id] + "$$");
   
   element.replaceWith(node);
   
 }
 
-function findTeX(container) {
-  for (const math of MathJax.startup.document.math) {
-    if (container === math.typesetRoot) return math.math;
-  }
+function ineq_edit(element) {
+  let eq_id = parseInt(element.id);
+  
+  const node = document.createTextNode("$" + equations_tex[eq_id] + "$");
+  
+  element.replaceWith(node);
+  
 }
 
 function text_edit(element) {
