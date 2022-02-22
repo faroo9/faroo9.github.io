@@ -38,15 +38,19 @@ function newTypeset(){
 }
 
 function ineq_edit(element) {
+  var all_math_stuff = MathJax.startup.document.getMathItemsWithin(element);
+  var math_item = all_math_stuff[0];
   
-  const node = document.createTextNode('$' + findTeX(element) + '$');
+  const node = document.createTextNode('$' + findTeX(math_item) + '$');
   
   element.replaceWith(node);
 }
 
 function eq_edit(element) {
+  var all_math_stuff = MathJax.startup.document.getMathItemsWithin(element);
+  var math_item = all_math_stuff[0];
   
-  const node = document.createTextNode("$$" + findTeX(element) + "$$");
+  const node = document.createTextNode("$$" + findTeX(math_item) + "$$");
   
   element.replaceWith(node);
   
