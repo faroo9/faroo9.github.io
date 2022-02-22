@@ -56,7 +56,6 @@ function newTypeset(){
 
 function eq_edit(element) {
   let eq_id = parseInt(element.id.slice(2));
-  alert(eq_id);
   
   const node = document.createTextNode("$$" + equations_tex[eq_id] + "$$");
   
@@ -66,7 +65,6 @@ function eq_edit(element) {
 
 function ineq_edit(element) {
   let eq_id = parseInt(element.id.slice(2));
-  alert(eq_id);
   
   const node = document.createTextNode("$" + equations_tex[eq_id] + "$");
   
