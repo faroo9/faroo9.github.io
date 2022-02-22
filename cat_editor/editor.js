@@ -37,28 +37,23 @@ function newTypeset(){
     MathJax.typeset();
 }
 
-function eq_edit(element) {
-  var all_math_stuff = MathJax.startup.document.getMathItemsWithin(element)
-  var math_item = all_math_stuff[0];
-  
-  const node = document.createTextNode('$' + math_item.math + '$');
-  var content = document.getElementById("content");
-  
-  content.replaceWith(node);
-  
-  element.removeAttribute("onclick");
-}
-
 function ineq_edit(element) {
   var all_math_stuff = MathJax.startup.document.getMathItemsWithin(element)
   var math_item = all_math_stuff[0];
   
+  const node = document.createTextNode('$' + math_item.math + '$');
+  
+  element.replaceWith(node);
+}
+
+function eq_edit(element) {
+  var all_math_stuff = MathJax.startup.document.getMathItemsWithin(element)
+  var math_item = all_math_stuff[0];
+  
   const node = document.createTextNode("$$" + math_item.math + "$$");
-  var content = document.getElementById("content");
   
-  content.replaceWith(node);
+  element.replaceWith(node);
   
-  element.removeAttribute("onclick");
 }
 
 
