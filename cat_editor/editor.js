@@ -19,7 +19,7 @@ function add_equation(tex) {
   tex = tex.replace(/\$\$/g, "");
   let eq_id = "eq" + (equation_nbr++);
   equations_tex.push(tex);
-  return "<p onclick=\"eq_edit(this)\" id=\""+ eq_id +"\">\\("+tex+"\\)<\/p>";
+  return "<p onclick=\"eq_edit(this)\" id=\""+ eq_id +"\">\\["+tex+"\\]<\/p>";
 }
 
 function compile(){
@@ -55,7 +55,8 @@ function newTypeset(){
 
 
 function eq_edit(element) {
-  let eq_id = parseInt(element.id);
+  let eq_id = parseInt(element.id.slice(2););
+  alert(eq_id);
   
   const node = document.createTextNode("$$" + equations_tex[eq_id] + "$$");
   
@@ -64,7 +65,8 @@ function eq_edit(element) {
 }
 
 function ineq_edit(element) {
-  let eq_id = parseInt(element.id);
+  let eq_id = parseInt(element.id.slice(2));
+  alert(eq_id);
   
   const node = document.createTextNode("$" + equations_tex[eq_id] + "$");
   
