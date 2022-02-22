@@ -40,9 +40,13 @@ function newTypeset(){
 function eq_edit(element) {
   var all_math_stuff = MathJax.startup.document.getMathItemsWithin(element)
   var math_item = all_math_stuff[0];
-  var text =  '$' + math_item.math + '$';
+  var text =  '$$' + math_item.math + '$$';
     
   element.innerText = text;
+  
+  element.innerHTML.file_content.replace("\\(", "");
+  element.innerHTML.file_content.replace("\\)", "");
+  
   element.removeAttribute("onclick");
 }
 
@@ -52,6 +56,10 @@ function ineq_edit(element) {
   var text =  '$' + math_item.math + '$';
     
   element.innerHTML = text;
+  
+  element.innerHTML.file_content.replace("\\(", "");
+  element.innerHTML.file_content.replace("\\)", "");
+  
   element.removeAttribute("onclick");
 }
 
