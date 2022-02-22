@@ -125,6 +125,7 @@ function table(dimensions){
 function save() {
     let file_content = new XMLSerializer().serializeToString(document)
     file_content = file_content.replace("<script src=\"editor.js\"></script>", "");
+    file_content = file_content.replace("<script src=\"FileSaver.js\"></script>", "");
     file_content = file_content.replace("<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>", "");
     file_content = file_content.replace(/style=\"display: block\"/g, "style=\"display: none\"");
     file_content = file_content.replace(/contenteditable=\"true\"/g, "");
