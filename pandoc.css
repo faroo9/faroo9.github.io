@@ -34,6 +34,7 @@ header {
 
 header a {
   color: white;
+  text-decoration-color: white;
 }
 
 a {
@@ -43,13 +44,12 @@ a {
   font-size: 1em;
   padding-left : 0.25em;
   padding-right : 0.25em;
-  background:
-    linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
-    linear-gradient(to right, rgba(0, 255, 0, 1), rgba(0, 200, 180, 1), rgba(0, 100, 200, 1));
   background-size: 100% 0.1em, 0 0.1em;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 400ms;
+  text-decoration: underline;
+  text-decoration-color: darkcyan;
 }
 
 a:hover,
@@ -96,7 +96,6 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #111;
   line-height: 0%;
   font-weight: normal;
 }
