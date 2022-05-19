@@ -15,8 +15,6 @@ body {
 }
 
 header {
-  padding-top: 50px;
-  padding-bottom: 50px;
   margin : auto;
   font-size: 24px;
   width: 30%;
@@ -25,13 +23,6 @@ header {
   background-position: center;
   background-size: 300px 300px;
   background-repeat: no-repeat;
-  background-color: rgb(40,40,40);
-  border-radius: 100%;
-}
-
-header a {
-  color: white;
-  text-decoration-color: white;
 }
 
 a {
