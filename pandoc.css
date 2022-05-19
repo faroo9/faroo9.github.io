@@ -18,7 +18,7 @@ header {
   padding-top: 50px;
   padding-bottom: 50px;
   margin : auto;
-  color: navajowhite;
+  color: white;
   font-size: 24px;
   width: 100%;
   text-align : center;
@@ -28,8 +28,6 @@ header {
   background-repeat: no-repeat;
   background-color: rgb(40,40,40);
   border-bottom: black;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
 }
 
 header a {
