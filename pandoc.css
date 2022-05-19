@@ -6,7 +6,6 @@ html {
 }
 
 body {
-  color: #444;
   font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
   font-size: 12px;
   line-height: 1.7;
@@ -16,10 +15,10 @@ body {
 }
 
 header {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin : auto;
-  color: black;
+  color: navajowhite;
   font-size: 24px;
   width: 100%;
   text-align : center;
@@ -27,6 +26,14 @@ header {
   background-position: center;
   background-size: 300px 300px;
   background-repeat: no-repeat;
+  background-color: rgb(40,40,40);
+  border-bottom: black;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+header a {
+  color: white;
 }
 
 a {
@@ -113,6 +120,8 @@ h2 {
     font-size: 3.5em;
     border-top:    3px solid  black;
     border-bottom: 3px solid black;
+    background-color: rgb(40,40,40);
+    color: white; 
     width: 100vw;
 }
 
