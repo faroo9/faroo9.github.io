@@ -35,7 +35,7 @@ header a {
   color: white;
 }
 
-header a:hover {
+a:hover {
   color: darkcyan;
 }
 
@@ -119,10 +119,7 @@ h2 {
     padding-bottom: 40px;
     text-align : center;
     font-size: 3.5em;
-    border-top:    3px solid  black;
-    border-bottom: 3px solid black;
-    background-color: rgb(40,40,40);
-    color: navajowhite;; 
+    color: darkcyan; 
     width: 100vw;
 }
 
