@@ -49,6 +49,17 @@ header a {
   text-align: right;
 }
 
+@media only screen and (max-device-width: 480px) {
+  .right-header {
+  padding-right: 4%;
+  padding-left: 3%;
+  float: right;
+  background-color: rgb(30,30,30);
+  text-align: right;
+  display: inline-block;
+}
+    }
+
 .right-header a{
   text-decoration: none;
 }
