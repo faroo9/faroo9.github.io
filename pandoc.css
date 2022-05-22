@@ -53,16 +53,15 @@ header a {
   header {
     background-image: none;
   }
+  
   .center-header {
-  margin-top: 30px;
-  margin-bottom: : 30px;
-  margin-left: 25%;
-  width: 50%;
-  float: left;
-  background-image : url("cat.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 90% 90%;
+    margin:auto;
+    width: 100%;
+    float: none;
+    background-image : url("cat.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
 }
   
   .right-header {
