@@ -25,9 +25,9 @@ header {
   background-position: center;
   background-size: 300px 300px;
   background-repeat: no-repeat;
-  border-bottom: 3px solid darkcyan;
+  border-bottom: 3px solid #ddd;
   background-color: rgb(40,40,40);
-  color: navajowhite;
+  color: #ddd;
   text-decoration: none;
 }
 
@@ -118,6 +118,8 @@ h2 {
     padding-top: 40px;
     padding-bottom: 40px;
     text-align : center;
+    border-top : 2px solid darkcyan;
+    border-bottom : 2px solid darkcyan;
     font-size: 3.5em;
     color: darkcyan; 
     width: 100vw;
