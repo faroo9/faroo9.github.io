@@ -51,12 +51,13 @@ header a {
 
 @media only screen and (max-device-width: 480px) {
   .right-header {
-  padding-right: 4%;
-  padding-left: 3%;
-  float: right;
+  padding-right: 0%;
+  padding-left: 0%;
+  float: left;
+  width: 100%
   background-color: rgb(30,30,30);
-  text-align: right;
-  display: inline-block;
+  text-align: center;
+  display: inline;
 }
     }
 
