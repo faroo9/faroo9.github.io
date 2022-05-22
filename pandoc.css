@@ -15,24 +15,42 @@ body {
 }
 
 header {
-  padding-top: 50px;
-  padding-bottom: 50px;
   margin : auto;
   font-size: 24px;
   width: 100%;
   text-align : center;
-  background-image : url("cat.svg");
-  background-position: center;
-  background-size: 300px 300px;
-  background-repeat: no-repeat;
   border-bottom: 3px solid #ddd;
   background-color: rgb(40,40,40);
   color: #ddd;
-  text-decoration: none;
+  display: inline-block;
+  background-image : url("cat.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
 }
 
 header a {
   color: white;
+}
+
+.center-header {
+  margin-top: 30px;
+  margin-bottom: : 30px;
+  margin-left: 25%;
+  width: 50%;
+  float: left;
+}
+
+.right-header {
+  padding-right: 4%;
+  padding-left: 3%;
+  float: right;
+  background-color: rgb(30,30,30);
+  text-align: right;
+}
+
+.right-header a{
+  text-decoration: none;
 }
 
 a:hover {
@@ -60,7 +78,7 @@ a:focus {
 }
 
 p, li {
-    
+
     font-size: 1.2em;
     margin-left: auto;
     margin-right: auto;
@@ -69,7 +87,7 @@ p, li {
 }
 
 iframe {
-    
+
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -121,7 +139,7 @@ h2 {
     border-top : 2px solid darkcyan;
     border-bottom : 2px solid darkcyan;
     font-size: 3.5em;
-    color: darkcyan; 
+    color: darkcyan;
     width: 100vw;
 }
 
@@ -333,7 +351,7 @@ table td {
     border: 0;
     border-bottom: 1px solid black;
   }
-  
+
   a[href]:after {
     content: " (" attr(href) ")";
   }
@@ -402,4 +420,3 @@ table td {
   background-color: #555;
   color: white;
 }
-
