@@ -64,7 +64,6 @@ header a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    text-align: left;
   }
   
   .right-header {
@@ -79,8 +78,6 @@ header a {
 }
   .right-header p {
   display: inline;
-  padding-left: 3px;
-  padding-right: 3px;
 }
     }
 
