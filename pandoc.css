@@ -64,18 +64,18 @@ header a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    text-align: center;
-}
+    text-align: left;
+  }
   
   .right-header {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  float: left;
-  width: 100%;
-  background-color: rgb(30,30,30);
-  text-align: center;
-  display: inline-block;
-    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: left;
+    width: 100%;
+    background-color: rgb(30,30,30);
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
 }
   .right-header p {
   display: inline;
