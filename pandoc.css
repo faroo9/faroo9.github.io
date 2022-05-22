@@ -68,7 +68,7 @@ header a {
   
   .right-header {
   padding-top: 5px;
-  padding-left: 5px;
+  padding-bottom: 5px;
   float: left;
   width: 100%;
   background-color: rgb(30,30,30);
