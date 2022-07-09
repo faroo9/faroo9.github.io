@@ -30,7 +30,7 @@ header a {
   float: left;
   display: block;
   text-align: center;
-  padding: 20px 16px;
+  padding: 21px 16px;
   text-decoration: none;
   font-size: 17px;
   color: #f2f2f2;
@@ -46,12 +46,12 @@ header h1 {
   background-image: url(cat.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 14px 16px;
+  background-size: 28px 32px;
 }
 
 header a:hover {
-  background: darkcyan;
-  color: black;
+  color: darkcyan;
+  background-color: white;
 }
 
 a:hover {
