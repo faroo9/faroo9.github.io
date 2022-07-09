@@ -29,9 +29,8 @@ header {
 header a {
   float: left;
   display: block;
-  color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -44,13 +43,13 @@ header h1 {
   padding: 14px 16px;
   text-decoration: underline;
   background-image: url(cat.svg);
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
 }
 
 header a:hover {
-  background: #ddd;
+  background: darkcyan;
   color: black;
 }
 
