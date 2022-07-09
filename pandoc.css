@@ -42,12 +42,8 @@ header h1 {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 7px;
+  padding: 14px 12px;
   text-decoration: underline;
-}
-
-header img {
-  float: left;
 }
 
 header a:hover {
