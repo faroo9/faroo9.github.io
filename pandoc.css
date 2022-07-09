@@ -43,10 +43,6 @@ header h1 {
   text-align: center;
   padding: 14px 16px;
   text-decoration: underline;
-  background-image: url(cat.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 250px 250px;
 }
 
 header a:hover {
