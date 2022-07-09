@@ -31,7 +31,7 @@ header a {
   float: left;
   display: block;
   text-align: center;
-  padding: 21px 12px;
+  padding: 21px 8px;
   text-decoration: none;
   font-size: 17px;
   color: #f2f2f2;
@@ -140,6 +140,7 @@ h2 {
     font-size: 3.5em;
     color: darkcyan;
     width: 100vw;
+
 }
 
 h3 {
