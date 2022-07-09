@@ -84,6 +84,28 @@ p, li {
 
 }
 
+ol {
+  list-style: none;
+}
+li {
+  margin: 0.25rem;
+}
+li::before {
+  content: var(--pub-date);
+  background: #333;
+  width: 7rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+ol ol li::before {
+  background: darkcyan;
+}
+
 iframe {
 
     margin-left: auto;
