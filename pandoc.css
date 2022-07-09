@@ -46,13 +46,10 @@ header h1 {
   text-decoration: underline;
 }
 
-header h1 {
+header img {
   float: left;
   display: block;
-  color: white;
-  text-align: center;
   padding: 14px 0px;
-  text-decoration: underline;
 }
 
 header a:hover {
