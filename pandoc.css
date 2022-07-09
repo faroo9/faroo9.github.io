@@ -24,13 +24,14 @@ header {
   background-position: left;
   background-repeat: no-repeat;
   background-size: 100%;
+  white-space: nowrap;
 }
 
 header a {
   float: left;
   display: block;
   text-align: center;
-  padding: 21px 16px;
+  padding: 21px 7px;
   text-decoration: none;
   font-size: 17px;
   color: #f2f2f2;
@@ -47,7 +48,7 @@ header h1 {
 
 header a:hover {
   color: darkcyan;
-  background-color: white;
+  background-color: #f2f2f2;
 }
 
 a:hover {
