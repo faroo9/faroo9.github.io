@@ -48,8 +48,6 @@ header h1 {
 
 header img {
   float: left;
-  display: block;
-  padding: 14px 0px;
 }
 
 header a:hover {
