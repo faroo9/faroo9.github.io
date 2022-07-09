@@ -42,6 +42,7 @@ header h1 {
   background-image: url(cat.svg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 header a:hover {
