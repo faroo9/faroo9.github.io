@@ -33,6 +33,7 @@ header a {
   padding: 20px 16px;
   text-decoration: none;
   font-size: 17px;
+  color: #f2f2f2;
 }
 
 header h1 {
@@ -45,7 +46,7 @@ header h1 {
   background-image: url(cat.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 14px 16px;
 }
 
 header a:hover {
