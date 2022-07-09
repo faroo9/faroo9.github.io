@@ -137,9 +137,10 @@ h2 {
     text-align : center;
     border-top : 2px solid darkcyan;
     border-bottom : 2px solid darkcyan;
-    font-size: 3.5em;
+    font-size: 3.0em;
     color: darkcyan;
     width: 100vw;
+    white-space: nowrap;
 
 }
 
