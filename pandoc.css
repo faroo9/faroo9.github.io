@@ -15,76 +15,26 @@ body {
 }
 
 header {
-  margin : auto;
-  font-size: 24px;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
   width: 100%;
-  text-align : center;
-  border-bottom: 3px solid #ddd;
-  background-color: rgb(40,40,40);
-  color: #ddd;
-  display: inline-block;
-  background-image : url("cat.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 90% 90%;
 }
 
 header a {
-  color: white;
-}
-
-.center-header {
-  margin-top: 30px;
-  margin-bottom: : 30px;
-  margin-left: 25%;
-  width: 50%;
   float: left;
-}
-
-.right-header {
-  padding-right: 4%;
-  padding-left: 3%;
-  float: right;
-  background-color: rgb(30,30,30);
-  text-align: right;
-}
-
-@media only screen and (max-device-width: 480px) {
-  header {
-    background-image: none;
-  }
-  
-  .center-header {
-    padding-bottom: 30px;
-    padding-top: 30px;
-    margin:auto;
-    width: 100%;
-    float: none;
-    background-image : url("cat.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-  
-  .right-header {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    float: left;
-    width: 100%;
-    background-color: rgb(30,30,30);
-    text-align: center;
-    display: inline-block;
-    overflow: hidden;
-}
-  .right-header p {
-  display: inline;
-}
-    }
-
-.right-header a{
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
+}
+
+header a:hover {
+  background: #ddd;
+  color: black;
 }
 
 a:hover {
