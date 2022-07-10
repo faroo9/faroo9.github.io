@@ -92,8 +92,8 @@ li {
 li::before {
   content: var(--pub-date);
   background: #333;
-  width: 10rem;
-  height: 3rem;
+  width: 8rem;
+  height: 2.5rem;
   border-radius: 50%;
   display: inline-block;
   line-height: 2rem;
