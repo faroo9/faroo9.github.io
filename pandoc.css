@@ -1,5 +1,4 @@
 html {
-  font-size: 100%;
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -156,7 +155,7 @@ h2 {
     margin-top: 100px;
     padding-top: 40px;
     padding-bottom: 40px;
-    text-align : center;
+    text-align : left;
     border-top : 2px solid darkcyan;
     border-bottom : 2px solid darkcyan;
     font-size: 2.7em;
@@ -338,14 +337,14 @@ table td {
 
 @media only screen and (max-width: 480px) {
   body {
-    font-size: 14px;
+    font-size: 12px;
   }
   p, li {
 
-    font-size: 1.2em;
+    font-size: 0.7em;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 100%;
 
 }
 }
@@ -353,6 +352,15 @@ table td {
   body {
     font-size: 16px;
   }
+  
+    p, li {
+
+    font-size: 0.7em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}
 }
 
 @media only screen and (min-width: 1600px) {
