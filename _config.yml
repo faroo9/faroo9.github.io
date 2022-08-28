@@ -3,3 +3,5 @@ title: Farouk OUNANE
 description: A Personal Web-Page.
 logo: 'me.png'
 author: 'Mohamed El Farouk OUNANE'
+plugins:
+- jekyll-remote-theme
