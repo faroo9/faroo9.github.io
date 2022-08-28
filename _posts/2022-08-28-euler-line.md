@@ -1,21 +1,14 @@
 ---
-title: |
-    Cat's Map
-    
-author: |
-    [Home](./index.html)
-    [About me](./aboutme.html)
-    [Github](https://github.com/SlachPi)
+layout: post
+title:  "Euler's Line Theorem...A Proof"
+tags: Euler, Euler's Line, Classical Geometery, Geometry, Mathematics, Proof
 ---
-
-   Euler's Line Theorem
-----------------------------------------------------
 
 A while ago, after reading coxeter's book "Intoduction to geometry". I tried to find my own proof that in any triangle the center of gravity, the circumcenter and the orthocenter lie on a same line, the so called euler's line. In this article I present the proof I came up with.
 
-Let's consider a triangle $ABC$ (not right angled at $A$ nor $C$) and denote by $O$ its circumcenter, by $G$ its center of gravity, and by $H$ its orthocenter.
+Let's consider a triangle $ABC$ not right angled at $A$ nor $C$, denote by $O$ its circumcenter, by $G$ its center of gravity, and by $H$ its orthocenter.
 
-First let's put a cartesian coordinate system such that O is the origin and the X-axis is parallel to $AC$. So that we will, consequently, have that the Y-axis intersect $AC$ perpendicularly in the middle, and thus $x_A = -x_C$ and $y_A = y_C$.
+First let's put a cartesian coordinate system such that $O$ is the origin and the X-axis is parallel to $AC$. So that we will, consequently, have that the Y-axis intersect $AC$ perpendicularly in the middle, and thus $x_A = -x_C$ and $y_A = y_C$.
 Thus we can easily conclude that:
 $$\left\{
 \begin{array}{c}
