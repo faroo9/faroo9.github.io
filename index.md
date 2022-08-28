@@ -7,10 +7,12 @@ my name is Farouk. I am a phd student in mathematics. I started this website to 
 
 <img src="/Cat-s-Map/photos/0.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 45%; border-radius: 70px;" />
 
+## Articles
+
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="/Cat-s-Map/{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
