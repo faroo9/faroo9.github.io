@@ -6,3 +6,11 @@ my name is Farouk. I am a phd student in mathematics. I started this website to 
 >> – Edsger W. Dijkstra
 
 <img src="/Cat-s-Map/photos/0.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 45%; border-radius: 70px;" />
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
