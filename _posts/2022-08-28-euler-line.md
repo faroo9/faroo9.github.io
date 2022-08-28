@@ -28,11 +28,11 @@ y_{H'}  = ({y_G \over x_G}) \times x_{H'} = 2y_A+y_B
 Now, if we can prove that $H'$ lies on the altitude of $AB$, the proof will be complete.
 To prove that it suffies to show that the lines $(CH')$ and $(AB)$ are perpendicular, or equivalently that the product of their slopes is equal to $-1$.
 This product is :
-$${{y_A - y_B}\over{x_A - x_B}} \times {{y_{H'} - y_C}\over{x_{H'} - x_C}} =
-{{y_A - y_B}\over{x_A - x_B}} \times {{2y_A+y_B - y_A}\over{x_B + x_A}}
-= - {{y_A^2 - y_B^2}\over{x_B^2 - x_A^2}}$$
+$${y_A - y_B\over x_A - x_B} \times {y_{H'} - y_C \over x_{H'} - x_C} =
+{ y_A - y_B \over x_A - x_B} \times { 2y_A+y_B - y_A \over x_B + x_A}
+= - {y_A^2 - y_B^2 \over x_B^2 - x_A^2}$$
 But as $A$, $B$ and $C$ lie on the same circle centered, we have.
-$$R^2 = x_A^2 + y_A^2 = x_B^2+y_B^2  \implies {{y_A^2 - y_B^2}\over{x_B ^2-x_A^2}}=1$$
+$$R^2 = x_A^2 + y_A^2 = x_B^2+y_B^2  \implies {y_A^2 - y_B^2 \over x_B ^2-x_A^2}=1$$
 And thus the proof is complete.
 
 ![Euler's Line Theorem](euler_line.svg)
