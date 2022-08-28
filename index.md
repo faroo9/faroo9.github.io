@@ -5,4 +5,4 @@ my name is Farouk. I am a phd student in mathematics. I started this website to 
 > I would like you to understand that I consider Mathematics more as a question of how rather than a question of what. That is I consider it as the art and science of reasoning as effectively as possible.
 >> – Edsger W. Dijkstra
 
-<img src="/photos/0.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 30%; border-radius: 70px;" />
+<img src="/Cat-s-Map/photos/0.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 30%; border-radius: 70px;" />
