@@ -5,8 +5,8 @@
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
     <div class="site-title" rel="author">
-    <a><img src="/Cat-s-Map/assets/{{ site.logo }}" class="site-logo" width="150" height="150" height="auto" style="border-radius: 50%;"></a>
-    <a href="{{ "/" | relative_url }}"> {{ site.title | escape }}</a>
+    <p><img src="/Cat-s-Map/assets/{{ site.logo }}" class="site-logo" width="150" height="150" height="auto" style="border-radius: 50%;border: 1px solid white;"></p>
+    <p href="{{ "/" | relative_url }}"> {{ site.title | escape }}</p>
     </div>
 
     {%- if titles_size > 0 -%}
