@@ -43,6 +43,6 @@ $$R^2 = x_A^2 + y_A^2 = x_B^2+y_B^2  \implies {y_A^2 - y_B^2 \over x_B ^2-x_A^2}
 
 And thus the proof is complete.
 
-![Euler's Line Theorem](euler_line.svg)
+![Euler's Line Theorem](https://slachpi.github.io/Cat-s-Map/euler_line.svg)
 
 This shows how a right choice of coordinate system can make things obvious.
