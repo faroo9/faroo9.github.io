@@ -1,6 +1,6 @@
 # Welcome To My Page !
 
-My name is Farouk. I started this website to be some sort of repository for my technical writings. My main interests are mathematics and programming.
+My name is Farouk. I am a Phd student in mathematics. I started this website to be some sort of repository for my technical writings. My main interests are mathematics and programming.
 
 > I would like you to understand that I consider Mathematics more as a question of how rather than a question of what. That is I consider it as the art and science of reasoning as effectively as possible.
 >> – Edsger W. Dijkstra
